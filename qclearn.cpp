@@ -11,7 +11,7 @@ using namespace std;
 int main(){
   clock_t start = clock(); // initial time 
 //
-/* Printing the header*/
+/* Printing header*/
 //
   printhead();
 
@@ -22,7 +22,7 @@ int main(){
   
   double total_time = double(end - start)/CLOCKS_PER_SEC; // total execution time in seconds
 //
-/* Printing the footer*/
+/* Printing footer*/
 //
   printfoot(total_time);
 //

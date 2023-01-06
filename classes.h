@@ -9,7 +9,7 @@ class Job{
     Job();             // constructor
 
   private:  
-    
+    // none
 };
 
 #endif

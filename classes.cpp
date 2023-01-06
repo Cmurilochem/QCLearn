@@ -6,6 +6,6 @@
 
 Job::Job(){
     std::cout << "" << std::endl;
-    std::cout << "Setting the job type" << std::endl;
+    std::cout << "Setting job type" << std::endl;
     std::cout << "" << std::endl;
 }

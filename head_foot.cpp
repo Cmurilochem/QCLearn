@@ -1,3 +1,6 @@
+// 
+/* Heading and footer functions; see also "head_foot.h" */
+//
 #include <iostream>
 #include "head_foot.h"
 

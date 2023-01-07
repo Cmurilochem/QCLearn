@@ -2,12 +2,12 @@
   #include "reading.h"
   #include "classes.h"
 
-  void reading(Job qc_problem){
+  //Job reading(Job qc_problem){
 
-    qc_problem.type = "PARTICLE_BOX_1D";
-    std::cout << qc_problem.type << std::endl;
+  //  qc_problem.type = "PARTICLE_BOX_1D";
+  //  //std::cout << qc_problem.type << std::endl;
 
-    //return qc_problem;
-  }
+  //return qc_problem;
+ // }
 
  

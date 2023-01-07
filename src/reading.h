@@ -3,6 +3,6 @@
 
 #include "classes.h"
 
-void reading(Job qc_problem);
+//Job reading(Job qc_problem);
 
 #endif

@@ -1,2 +1,2 @@
 # QCLearn
-An educational software to learn well-known quantum chemistry problems
+An educational software to learn fundamental quantum chemistry problems

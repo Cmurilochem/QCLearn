@@ -6,7 +6,6 @@
 #include <string>      // when dealing with strings
 #include "head_foot.h" // file with external functions for printing program heading and footer
 #include "classes.h"   // file with external definitions of classes (objects with attributes and methods)
-#include "reading.h"   // file to read input
 
 using namespace std; 
 
@@ -21,11 +20,11 @@ int main(){
 //
   Job qc_problem;
 //
-/* reading the input file */
+/* reading atributes (job specifications) from file */
 //
-  reading(qc_problem);
+  qc_problem.getData("input.txt");
 
-  //cout << qc_problem.type << endl;  
+  //cout << qc_problem.type << endl;
 //
 /* Calculating execution time*/
 //

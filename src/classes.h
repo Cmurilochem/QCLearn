@@ -4,12 +4,12 @@
 #include <iostream>
 
 class Job{
-  public: 
+  private:
     std::string type;
-    Job();             // constructor
 
-  private:  
-    // none
+  public: 
+    Job();                                 // constructor
+    void getData(std::string filename);    // reading private attributes from file
 };
 
 #endif

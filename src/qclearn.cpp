@@ -23,8 +23,10 @@ int main(){
 /* reading atributes (job specifications) from file */
 //
   qc_problem.getData("input.txt");
-
-  //cout << qc_problem.type << endl;
+//
+/* printing data */
+//
+  qc_problem.putData();
 //
 /* Calculating execution time*/
 //

@@ -2,7 +2,7 @@
 /* Classes definition; see also "classes.h" */
 //
 #include <iostream>
-#include <fstream>     // open, read and write to an external file
+#include <fstream>   // open, read and write to an external file
 #include "classes.h"
 
 Job::Job(){
@@ -12,16 +12,17 @@ Job::Job(){
 }
 
 void Job::getData(std::string filename){
+    std::string temp;
 
     std::ifstream myfile(filename);
 
     if (myfile.is_open()){
-        std::string temp1,temp2;
-        //std::cout << "OK" << std::endl;
+        
+        getline(myfile,temp);                    // reading the whole first line
+        type = temp.substr(temp.find(" ")+1,-1); // removing the "*JOB" part
 
-        myfile >> temp1 >> temp2;
-        std::cout << temp1 << temp2 << std::endl;
-
+        
+        
         myfile.close();
     } else {
         std::cout << "Unable to open input file" << std::endl;
@@ -29,5 +30,16 @@ void Job::getData(std::string filename){
     
     //std::cin >> type;
 
+    
+}
+
+void Job::putData(){
+    
+    if (type == "PARTICLE_BOX_1D") {
+        std::cout << "Particle in a 1D box selected" << std::endl;
+    } else {
+        std::cout << "ERROR" << std::endl;
+    }
+    
     
 }

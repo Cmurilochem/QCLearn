@@ -8,7 +8,7 @@ std::string delimiter = "***************************************";
 
 void printhead(){
     std::string head_1st = "QCLearn";
-    std::string head_2nd = "Classical problems in quantum chemistry";
+    std::string head_2nd = "Fundamental problems in quantum chemistry";
     
     std::cout << delimiter << std::endl;
     std::cout << head_1st << std::endl;

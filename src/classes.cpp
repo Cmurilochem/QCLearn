@@ -9,7 +9,7 @@
 #include "rigid_rotor.h"
 #include "harm_oscillator.h"
 
-Job::Job(){
+Job::Job(){ // Constructor
     std::cout << "" << std::endl;
     std::cout << "Setting job type" << std::endl;
     std::cout << "" << std::endl;
@@ -61,13 +61,19 @@ void Job::putData(){
 
         std::cout << "Particle in a box selected" << std::endl;
 
+        particle_box();
+
     } else if (type == "RIGID_ROTOR") {
 
         std::cout << "Rigid rotor selected" << std::endl;
 
+        rigid_rotor();
+
     } else if (type == "HARM_OSCILLATOR") {
 
         std::cout << "Harmonic oscilattor selected" << std::endl;
+
+        harm_oscillator();
     }
     else {
         std::cout << "Error!" << std::endl;

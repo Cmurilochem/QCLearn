@@ -5,6 +5,9 @@
 #include <fstream>   // open, read and write to an external file
 #include <stdlib.h>  // necessary to abort 
 #include "classes.h"
+#include "particle_box.h"
+#include "rigid_rotor.h"
+#include "harm_oscillator.h"
 
 Job::Job(){
     std::cout << "" << std::endl;
@@ -27,14 +30,17 @@ void Job::getData(std::string filename){
         //
 
         try { 
-            if (type != "PARTICLE_BOX_1D") {
+            if ( (type != "PARTICLE_BOX" && 
+                  type != "RIGID_ROTOR" && 
+                  type != "HARM_OSCILLATOR") ) {
+
                 throw (type); // if the input is wrong, throw an error defined in catch 
             }
         }
         catch (std::string mytype) { 
             std::cout << "Error!" << std::endl;
             std::cout << "Please, provide a valid job type" << std::endl;
-            std::cout << "Input job type ---> " << mytype << " <--- is not implemented" << std::endl;
+            std::cout << "Input job type ---> " << mytype << " <--- is not yet implemented" << std::endl;
             exit(0);
         }
 
@@ -47,17 +53,24 @@ void Job::getData(std::string filename){
         std::cout << "Unable to open input file" << std::endl;
     }
     
-    //std::cin >> type;
-
-    
 }
 
 void Job::putData(){
     
-    if (type == "PARTICLE_BOX_1D") {
+    if (type == "PARTICLE_BOX") {
+
         std::cout << "Particle in a box selected" << std::endl;
-    } else {
-        std::cout << "ERROR" << std::endl;
+
+    } else if (type == "RIGID_ROTOR") {
+
+        std::cout << "Rigid rotor selected" << std::endl;
+
+    } else if (type == "HARM_OSCILLATOR") {
+
+        std::cout << "Harmonic oscilattor selected" << std::endl;
+    }
+    else {
+        std::cout << "Error!" << std::endl;
         exit(0);
     }
     

@@ -59,7 +59,8 @@ void Job::putData(){
     
     if (type == "PARTICLE_BOX") {
 
-        std::cout << "Particle in a box selected" << std::endl;
+        std::cout << "Particle confined in a one-dimensional box" << std::endl;
+        std::cout << " " << std::endl;
 
         particle_box();
 

@@ -4,7 +4,7 @@
 #include <iostream>
 #include "head_foot.h"
 
-std::string delimiter = "***************************************";
+std::string delimiter = "*************************************************************";
 
 void printhead(){
     std::string head_1st = "QCLearn";

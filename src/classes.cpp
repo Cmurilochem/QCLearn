@@ -75,8 +75,8 @@ void Job::putData(){
         std::cout << "Harmonic oscilattor selected" << std::endl;
 
         harm_oscillator();
-    }
-    else {
+
+    } else {
         std::cout << "Error!" << std::endl;
         exit(0);
     }

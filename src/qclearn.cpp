@@ -22,7 +22,7 @@ int main(){
 //
 /* reading atributes (job specifications) from file */
 //
-  qc_problem.getData("input.txt");
+  qc_problem.getData("input.dat");
 //
 /* printing data */
 //

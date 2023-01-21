@@ -1,1 +1,1 @@
-/usr/bin/g++     CMakeFiles/qclearn.x.dir/main.cpp.o ../src/CMakeFiles/head_foot.dir/head_foot.cpp.o ../src/CMakeFiles/job_class.dir/classes.cpp.o ../src/CMakeFiles/constants.dir/constants.cpp.o  -o ../../qclearn.x 
+/usr/bin/g++  -g   CMakeFiles/qclearn.x.dir/main.cpp.o ../src/CMakeFiles/head_foot.dir/head_foot.cpp.o ../src/CMakeFiles/job_class.dir/classes.cpp.o ../src/CMakeFiles/constants.dir/constants.cpp.o  -o ../../qclearn.x 

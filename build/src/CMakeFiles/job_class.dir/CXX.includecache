@@ -13,22 +13,24 @@ iostream
 ../include/qclearn/constants.h
 
 ../include/qclearn/harm_oscillator.h
+iostream
+-
 cmath
 -
-constants.h
-../include/qclearn/constants.h
 
 ../include/qclearn/particle_box.h
+iostream
+-
 cmath
 -
 constants.h
 ../include/qclearn/constants.h
 
 ../include/qclearn/rigid_rotor.h
+iostream
+-
 cmath
 -
-constants.h
-../include/qclearn/constants.h
 
 /home/murilo/QCLearn/src/classes.cpp
 iostream

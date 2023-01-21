@@ -6,3 +6,21 @@
 
 #IncludeRegexTransform: 
 
+../include/qclearn/classes.h
+iostream
+-
+
+../include/qclearn/head_foot.h
+
+/home/murilo/QCLearn/main_cpp/main.cpp
+iostream
+-
+time.h
+-
+string
+-
+head_foot.h
+/home/murilo/QCLearn/main_cpp/head_foot.h
+classes.h
+/home/murilo/QCLearn/main_cpp/classes.h
+

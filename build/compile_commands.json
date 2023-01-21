@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/murilo/QCLearn/build/src",
+  "command": "/usr/bin/g++   -I/home/murilo/QCLearn/include/qclearn  -g   -o CMakeFiles/constants.dir/constants.cpp.o -c /home/murilo/QCLearn/src/constants.cpp",
+  "file": "/home/murilo/QCLearn/src/constants.cpp"
+},
+{
+  "directory": "/home/murilo/QCLearn/build/src",
+  "command": "/usr/bin/g++   -I/home/murilo/QCLearn/include/qclearn  -g   -o CMakeFiles/job_class.dir/classes.cpp.o -c /home/murilo/QCLearn/src/classes.cpp",
+  "file": "/home/murilo/QCLearn/src/classes.cpp"
+},
+{
+  "directory": "/home/murilo/QCLearn/build/src",
+  "command": "/usr/bin/g++   -I/home/murilo/QCLearn/include/qclearn  -g   -o CMakeFiles/head_foot.dir/head_foot.cpp.o -c /home/murilo/QCLearn/src/head_foot.cpp",
+  "file": "/home/murilo/QCLearn/src/head_foot.cpp"
+},
+{
+  "directory": "/home/murilo/QCLearn/build/main_cpp",
+  "command": "/usr/bin/g++   -I/home/murilo/QCLearn/include/qclearn  -g   -o CMakeFiles/qclearn.x.dir/main.cpp.o -c /home/murilo/QCLearn/main_cpp/main.cpp",
+  "file": "/home/murilo/QCLearn/main_cpp/main.cpp"
+}
+]

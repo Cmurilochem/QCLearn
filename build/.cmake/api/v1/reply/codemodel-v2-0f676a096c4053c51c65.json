@@ -49,7 +49,7 @@
 					]
 				}
 			],
-			"name" : "",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -74,28 +74,28 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "constants::@145eef247bfb46b6828c",
-					"jsonFile" : "target-constants-20909254d2d27e4ba75c.json",
+					"jsonFile" : "target-constants-Debug-4349d740b5f9be7eaa2a.json",
 					"name" : "constants",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "head_foot::@145eef247bfb46b6828c",
-					"jsonFile" : "target-head_foot-55b4ad5b6c6ef663f0bc.json",
+					"jsonFile" : "target-head_foot-Debug-53cae3a231aa42c6404c.json",
 					"name" : "head_foot",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "job_class::@145eef247bfb46b6828c",
-					"jsonFile" : "target-job_class-8dfd3d7a0cdc0341784e.json",
+					"jsonFile" : "target-job_class-Debug-9e3d5e273774ffd56c6e.json",
 					"name" : "job_class",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "qclearn.x::@65b6371d25ddd59f580a",
-					"jsonFile" : "target-qclearn.x-db31ec763db66c5dfdc6.json",
+					"jsonFile" : "target-qclearn.x-Debug-cbc0e35ba46e477de6d0.json",
 					"name" : "qclearn.x",
 					"projectIndex" : 0
 				}

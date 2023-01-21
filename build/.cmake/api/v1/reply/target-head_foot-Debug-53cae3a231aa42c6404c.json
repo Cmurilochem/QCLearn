@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "src/CMakeFiles/constants.dir/constants.cpp.o"
+			"path" : "src/CMakeFiles/head_foot.dir/head_foot.cpp.o"
 		}
 	],
 	"backtrace" : 1,
@@ -25,13 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 25,
+				"line" : 9,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 27,
+				"line" : 11,
 				"parent" : 0
 			}
 		]
@@ -42,7 +42,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " "
+					"fragment" : "-g  "
 				}
 			],
 			"includes" : 
@@ -59,8 +59,8 @@
 			]
 		}
 	],
-	"id" : "constants::@145eef247bfb46b6828c",
-	"name" : "constants",
+	"id" : "head_foot::@145eef247bfb46b6828c",
+	"name" : "head_foot",
 	"paths" : 
 	{
 		"build" : "src",
@@ -88,12 +88,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/constants.cpp",
+			"path" : "src/head_foot.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "include/qclearn/constants.h",
+			"path" : "include/qclearn/head_foot.h",
 			"sourceGroupIndex" : 1
 		}
 	],

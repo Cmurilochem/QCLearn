@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/qclearn/classes.h
+iostream
+-
+
+../include/qclearn/head_foot.h
+
+/home/murilo/QCLearn/qclean_main/main.cpp
+iostream
+-
+time.h
+-
+string
+-
+head_foot.h
+/home/murilo/QCLearn/qclean_main/head_foot.h
+classes.h
+/home/murilo/QCLearn/qclean_main/classes.h
+

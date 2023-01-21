@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/qclearn/constants.h
+
+/home/murilo/QCLearn/src/constants.cpp
+constants.h
+/home/murilo/QCLearn/src/constants.h
+

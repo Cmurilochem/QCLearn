@@ -22,16 +22,7 @@ set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
 # including tests
 
-#include(CTest)
-
-# To generate documentation 
-
-#find_package(Doxygen)
-#if(Doxygen_FOUND)
-#  add_subdirectory(docs)
-#else()
-#  message(STATUS "Doxygen not found, not building docs")
-#endif()
+include(CTest)
 
 # The compiled library code is here
 
@@ -43,4 +34,4 @@ add_subdirectory(main_cpp)
 
 # Adding also the tests in the path 
 
-#add_subdirectory(tests)        
+add_subdirectory(tests)        

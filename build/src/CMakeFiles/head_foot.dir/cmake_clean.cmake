@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/head_foot.dir/head_foot.cpp.o"
+  "libhead_foot.a"
+  "libhead_foot.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

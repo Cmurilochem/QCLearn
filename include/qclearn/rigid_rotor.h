@@ -1,7 +1,6 @@
-#include <iostream>
-#include <cmath>
+#ifndef RIGID_ROTOR_H_
+#define RIGID_ROTOR_H_
 
-void rigid_rotor(){
-    std::cout << "I am a rotor" << std::endl;
+void rigid_rotor();
 
-}
+#endif

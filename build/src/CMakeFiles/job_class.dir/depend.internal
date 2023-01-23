@@ -3,7 +3,6 @@
 
 src/CMakeFiles/job_class.dir/classes.cpp.o
  ../include/qclearn/classes.h
- ../include/qclearn/constants.h
  ../include/qclearn/harm_oscillator.h
  ../include/qclearn/particle_box.h
  ../include/qclearn/rigid_rotor.h

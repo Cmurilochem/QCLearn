@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/qclearn/harm_oscillator.h
+
+/home/murilo/QCLearn/src/harm_oscillator.cpp
+iostream
+-
+cmath
+-
+harm_oscillator.h
+/home/murilo/QCLearn/src/harm_oscillator.h
+

@@ -60,31 +60,31 @@ include main_cpp/CMakeFiles/qclearn.x.dir/flags.make
 main_cpp/CMakeFiles/qclearn.x.dir/main.cpp.o: main_cpp/CMakeFiles/qclearn.x.dir/flags.make
 main_cpp/CMakeFiles/qclearn.x.dir/main.cpp.o: ../main_cpp/main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/murilo/QCLearn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object main_cpp/CMakeFiles/qclearn.x.dir/main.cpp.o"
-	cd /home/murilo/QCLearn/build/main_cpp && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qclearn.x.dir/main.cpp.o -c /home/murilo/QCLearn/main_cpp/main.cpp
+	cd /home/murilo/QCLearn/build/main_cpp && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qclearn.x.dir/main.cpp.o -c /home/murilo/QCLearn/main_cpp/main.cpp
 
 main_cpp/CMakeFiles/qclearn.x.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qclearn.x.dir/main.cpp.i"
-	cd /home/murilo/QCLearn/build/main_cpp && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/murilo/QCLearn/main_cpp/main.cpp > CMakeFiles/qclearn.x.dir/main.cpp.i
+	cd /home/murilo/QCLearn/build/main_cpp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/murilo/QCLearn/main_cpp/main.cpp > CMakeFiles/qclearn.x.dir/main.cpp.i
 
 main_cpp/CMakeFiles/qclearn.x.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qclearn.x.dir/main.cpp.s"
-	cd /home/murilo/QCLearn/build/main_cpp && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/murilo/QCLearn/main_cpp/main.cpp -o CMakeFiles/qclearn.x.dir/main.cpp.s
+	cd /home/murilo/QCLearn/build/main_cpp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/murilo/QCLearn/main_cpp/main.cpp -o CMakeFiles/qclearn.x.dir/main.cpp.s
 
 # Object files for target qclearn.x
 qclearn_x_OBJECTS = \
 "CMakeFiles/qclearn.x.dir/main.cpp.o"
 
 # External object files for target qclearn.x
-qclearn_x_EXTERNAL_OBJECTS = \
-"/home/murilo/QCLearn/build/src/CMakeFiles/head_foot.dir/head_foot.cpp.o" \
-"/home/murilo/QCLearn/build/src/CMakeFiles/job_class.dir/classes.cpp.o" \
-"/home/murilo/QCLearn/build/src/CMakeFiles/constants.dir/constants.cpp.o"
+qclearn_x_EXTERNAL_OBJECTS =
 
 ../qclearn.x: main_cpp/CMakeFiles/qclearn.x.dir/main.cpp.o
-../qclearn.x: src/CMakeFiles/head_foot.dir/head_foot.cpp.o
-../qclearn.x: src/CMakeFiles/job_class.dir/classes.cpp.o
-../qclearn.x: src/CMakeFiles/constants.dir/constants.cpp.o
 ../qclearn.x: main_cpp/CMakeFiles/qclearn.x.dir/build.make
+../qclearn.x: src/libhead_foot.a
+../qclearn.x: src/libjob_class.a
+../qclearn.x: src/libpart_box.a
+../qclearn.x: src/libharm_oscillator.a
+../qclearn.x: src/librigid_rotor.a
+../qclearn.x: src/libconstants.a
 ../qclearn.x: main_cpp/CMakeFiles/qclearn.x.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/murilo/QCLearn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../qclearn.x"
 	cd /home/murilo/QCLearn/build/main_cpp && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/qclearn.x.dir/link.txt --verbose=$(VERBOSE)

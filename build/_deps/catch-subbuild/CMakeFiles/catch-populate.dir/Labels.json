@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/murilo/QCLearn/build/_deps/catch-subbuild/CMakeFiles/catch-populate"
+		},
+		{
+			"file" : "/home/murilo/QCLearn/build/_deps/catch-subbuild/CMakeFiles/catch-populate.rule"
+		},
+		{
+			"file" : "/home/murilo/QCLearn/build/_deps/catch-subbuild/CMakeFiles/catch-populate-complete.rule"
+		},
+		{
+			"file" : "/home/murilo/QCLearn/build/_deps/catch-subbuild/catch-populate-prefix/src/catch-populate-stamp/catch-populate-install.rule"
+		},
+		{
+			"file" : "/home/murilo/QCLearn/build/_deps/catch-subbuild/catch-populate-prefix/src/catch-populate-stamp/catch-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/murilo/QCLearn/build/_deps/catch-subbuild/catch-populate-prefix/src/catch-populate-stamp/catch-populate-download.rule"
+		},
+		{
+			"file" : "/home/murilo/QCLearn/build/_deps/catch-subbuild/catch-populate-prefix/src/catch-populate-stamp/catch-populate-update.rule"
+		},
+		{
+			"file" : "/home/murilo/QCLearn/build/_deps/catch-subbuild/catch-populate-prefix/src/catch-populate-stamp/catch-populate-patch.rule"
+		},
+		{
+			"file" : "/home/murilo/QCLearn/build/_deps/catch-subbuild/catch-populate-prefix/src/catch-populate-stamp/catch-populate-configure.rule"
+		},
+		{
+			"file" : "/home/murilo/QCLearn/build/_deps/catch-subbuild/catch-populate-prefix/src/catch-populate-stamp/catch-populate-build.rule"
+		},
+		{
+			"file" : "/home/murilo/QCLearn/build/_deps/catch-subbuild/catch-populate-prefix/src/catch-populate-stamp/catch-populate-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"catch-populate"
+		],
+		"name" : "catch-populate"
+	}
+}

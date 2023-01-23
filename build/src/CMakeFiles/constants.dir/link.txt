@@ -1,0 +1,2 @@
+/usr/bin/ar qc libconstants.a  CMakeFiles/constants.dir/constants.cpp.o
+/usr/bin/ranlib libconstants.a

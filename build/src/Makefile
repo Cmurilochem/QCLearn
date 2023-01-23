@@ -78,6 +78,17 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # The main all target
 all: cmake_check_build_system
 	cd /home/murilo/QCLearn/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/murilo/QCLearn/build/CMakeFiles /home/murilo/QCLearn/build/src/CMakeFiles/progress.marks
@@ -124,6 +135,51 @@ constants: src/CMakeFiles/constants.dir/rule
 constants/fast:
 	cd /home/murilo/QCLearn/build && $(MAKE) -f src/CMakeFiles/constants.dir/build.make src/CMakeFiles/constants.dir/build
 .PHONY : constants/fast
+
+# Convenience name for target.
+src/CMakeFiles/rigid_rotor.dir/rule:
+	cd /home/murilo/QCLearn/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/rigid_rotor.dir/rule
+.PHONY : src/CMakeFiles/rigid_rotor.dir/rule
+
+# Convenience name for target.
+rigid_rotor: src/CMakeFiles/rigid_rotor.dir/rule
+
+.PHONY : rigid_rotor
+
+# fast build rule for target.
+rigid_rotor/fast:
+	cd /home/murilo/QCLearn/build && $(MAKE) -f src/CMakeFiles/rigid_rotor.dir/build.make src/CMakeFiles/rigid_rotor.dir/build
+.PHONY : rigid_rotor/fast
+
+# Convenience name for target.
+src/CMakeFiles/harm_oscillator.dir/rule:
+	cd /home/murilo/QCLearn/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/harm_oscillator.dir/rule
+.PHONY : src/CMakeFiles/harm_oscillator.dir/rule
+
+# Convenience name for target.
+harm_oscillator: src/CMakeFiles/harm_oscillator.dir/rule
+
+.PHONY : harm_oscillator
+
+# fast build rule for target.
+harm_oscillator/fast:
+	cd /home/murilo/QCLearn/build && $(MAKE) -f src/CMakeFiles/harm_oscillator.dir/build.make src/CMakeFiles/harm_oscillator.dir/build
+.PHONY : harm_oscillator/fast
+
+# Convenience name for target.
+src/CMakeFiles/part_box.dir/rule:
+	cd /home/murilo/QCLearn/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/part_box.dir/rule
+.PHONY : src/CMakeFiles/part_box.dir/rule
+
+# Convenience name for target.
+part_box: src/CMakeFiles/part_box.dir/rule
+
+.PHONY : part_box
+
+# fast build rule for target.
+part_box/fast:
+	cd /home/murilo/QCLearn/build && $(MAKE) -f src/CMakeFiles/part_box.dir/build.make src/CMakeFiles/part_box.dir/build
+.PHONY : part_box/fast
 
 # Convenience name for target.
 src/CMakeFiles/job_class.dir/rule:
@@ -209,6 +265,33 @@ constants.cpp.s:
 	cd /home/murilo/QCLearn/build && $(MAKE) -f src/CMakeFiles/constants.dir/build.make src/CMakeFiles/constants.dir/constants.cpp.s
 .PHONY : constants.cpp.s
 
+harm_oscillator.o: harm_oscillator.cpp.o
+
+.PHONY : harm_oscillator.o
+
+# target to build an object file
+harm_oscillator.cpp.o:
+	cd /home/murilo/QCLearn/build && $(MAKE) -f src/CMakeFiles/harm_oscillator.dir/build.make src/CMakeFiles/harm_oscillator.dir/harm_oscillator.cpp.o
+.PHONY : harm_oscillator.cpp.o
+
+harm_oscillator.i: harm_oscillator.cpp.i
+
+.PHONY : harm_oscillator.i
+
+# target to preprocess a source file
+harm_oscillator.cpp.i:
+	cd /home/murilo/QCLearn/build && $(MAKE) -f src/CMakeFiles/harm_oscillator.dir/build.make src/CMakeFiles/harm_oscillator.dir/harm_oscillator.cpp.i
+.PHONY : harm_oscillator.cpp.i
+
+harm_oscillator.s: harm_oscillator.cpp.s
+
+.PHONY : harm_oscillator.s
+
+# target to generate assembly for a file
+harm_oscillator.cpp.s:
+	cd /home/murilo/QCLearn/build && $(MAKE) -f src/CMakeFiles/harm_oscillator.dir/build.make src/CMakeFiles/harm_oscillator.dir/harm_oscillator.cpp.s
+.PHONY : harm_oscillator.cpp.s
+
 head_foot.o: head_foot.cpp.o
 
 .PHONY : head_foot.o
@@ -236,6 +319,60 @@ head_foot.cpp.s:
 	cd /home/murilo/QCLearn/build && $(MAKE) -f src/CMakeFiles/head_foot.dir/build.make src/CMakeFiles/head_foot.dir/head_foot.cpp.s
 .PHONY : head_foot.cpp.s
 
+particle_box.o: particle_box.cpp.o
+
+.PHONY : particle_box.o
+
+# target to build an object file
+particle_box.cpp.o:
+	cd /home/murilo/QCLearn/build && $(MAKE) -f src/CMakeFiles/part_box.dir/build.make src/CMakeFiles/part_box.dir/particle_box.cpp.o
+.PHONY : particle_box.cpp.o
+
+particle_box.i: particle_box.cpp.i
+
+.PHONY : particle_box.i
+
+# target to preprocess a source file
+particle_box.cpp.i:
+	cd /home/murilo/QCLearn/build && $(MAKE) -f src/CMakeFiles/part_box.dir/build.make src/CMakeFiles/part_box.dir/particle_box.cpp.i
+.PHONY : particle_box.cpp.i
+
+particle_box.s: particle_box.cpp.s
+
+.PHONY : particle_box.s
+
+# target to generate assembly for a file
+particle_box.cpp.s:
+	cd /home/murilo/QCLearn/build && $(MAKE) -f src/CMakeFiles/part_box.dir/build.make src/CMakeFiles/part_box.dir/particle_box.cpp.s
+.PHONY : particle_box.cpp.s
+
+rigid_rotor.o: rigid_rotor.cpp.o
+
+.PHONY : rigid_rotor.o
+
+# target to build an object file
+rigid_rotor.cpp.o:
+	cd /home/murilo/QCLearn/build && $(MAKE) -f src/CMakeFiles/rigid_rotor.dir/build.make src/CMakeFiles/rigid_rotor.dir/rigid_rotor.cpp.o
+.PHONY : rigid_rotor.cpp.o
+
+rigid_rotor.i: rigid_rotor.cpp.i
+
+.PHONY : rigid_rotor.i
+
+# target to preprocess a source file
+rigid_rotor.cpp.i:
+	cd /home/murilo/QCLearn/build && $(MAKE) -f src/CMakeFiles/rigid_rotor.dir/build.make src/CMakeFiles/rigid_rotor.dir/rigid_rotor.cpp.i
+.PHONY : rigid_rotor.cpp.i
+
+rigid_rotor.s: rigid_rotor.cpp.s
+
+.PHONY : rigid_rotor.s
+
+# target to generate assembly for a file
+rigid_rotor.cpp.s:
+	cd /home/murilo/QCLearn/build && $(MAKE) -f src/CMakeFiles/rigid_rotor.dir/build.make src/CMakeFiles/rigid_rotor.dir/rigid_rotor.cpp.s
+.PHONY : rigid_rotor.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -243,8 +380,12 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... constants"
+	@echo "... rigid_rotor"
+	@echo "... harm_oscillator"
+	@echo "... edit_cache"
+	@echo "... test"
+	@echo "... part_box"
 	@echo "... job_class"
 	@echo "... head_foot"
 	@echo "... classes.o"
@@ -253,9 +394,18 @@ help:
 	@echo "... constants.o"
 	@echo "... constants.i"
 	@echo "... constants.s"
+	@echo "... harm_oscillator.o"
+	@echo "... harm_oscillator.i"
+	@echo "... harm_oscillator.s"
 	@echo "... head_foot.o"
 	@echo "... head_foot.i"
 	@echo "... head_foot.s"
+	@echo "... particle_box.o"
+	@echo "... particle_box.i"
+	@echo "... particle_box.s"
+	@echo "... rigid_rotor.o"
+	@echo "... rigid_rotor.i"
+	@echo "... rigid_rotor.s"
 .PHONY : help
 
 

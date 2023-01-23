@@ -4,10 +4,11 @@
 #include <iostream>  
 #include <time.h>      // allows one to check time
 #include <string>      // when dealing with strings
+#include <cmath>       // includes math function
 #include "head_foot.h" // file with external functions for printing program heading and footer
 #include "classes.h"   // file with external definitions of classes (objects with attributes and methods)
 
-using namespace std; 
+using namespace std;
 
 int main(){
   clock_t start = clock(); // initial time 

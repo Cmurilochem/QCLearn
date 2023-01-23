@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/qclearn/constants.h
+
+../include/qclearn/particle_box.h
+
+/home/murilo/QCLearn/src/particle_box.cpp
+iostream
+-
+cmath
+-
+constants.h
+/home/murilo/QCLearn/src/constants.h
+particle_box.h
+/home/murilo/QCLearn/src/particle_box.h
+

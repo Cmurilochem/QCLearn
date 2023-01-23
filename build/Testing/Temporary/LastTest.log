@@ -1,0 +1,40 @@
+Start testing: Jan 23 21:34 CET
+----------------------------------------------------------
+1/1 Testing: wavefunction_1D_box
+1/1 Test: wavefunction_1D_box
+Command: "/home/murilo/QCLearn/testwfpartbox"
+Directory: /home/murilo/QCLearn/build/tests
+"wavefunction_1D_box" start time: Jan 23 21:34 CET
+Output:
+----------------------------------------------------------
+Energy is: 2.65359e-06
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+testwfpartbox is a Catch v2.13.6 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+ChekingWaveFunction at corner
+-------------------------------------------------------------------------------
+/home/murilo/QCLearn/tests/testwfpartbox.cpp:11
+...............................................................................
+
+/home/murilo/QCLearn/tests/testwfpartbox.cpp:13: FAILED:
+  REQUIRE( particleBoxExactWF(1,2.0,2.0) == 0.0 )
+with expansion:
+  0.0000026536 == 0.0
+
+Energy is: 0
+===============================================================================
+test cases: 2 | 1 passed | 1 failed
+assertions: 2 | 1 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"wavefunction_1D_box" end time: Jan 23 21:34 CET
+"wavefunction_1D_box" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jan 23 21:34 CET

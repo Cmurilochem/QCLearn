@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhead_foot.a  CMakeFiles/head_foot.dir/head_foot.cpp.o
+/usr/bin/ranlib libhead_foot.a

@@ -1,0 +1,3 @@
+wavefunction_1D_box 0 0
+---
+wavefunction_1D_box

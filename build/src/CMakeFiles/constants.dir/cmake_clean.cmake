@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/constants.dir/constants.cpp.o"
+  "libconstants.a"
+  "libconstants.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -19,6 +19,8 @@ time.h
 -
 string
 -
+cmath
+-
 head_foot.h
 /home/murilo/QCLearn/main_cpp/head_foot.h
 classes.h

@@ -1,7 +1,6 @@
-#include <iostream>
-#include <cmath>
+#ifndef HARM_OSCILLATOR_H_
+#define HARM_OSCILLATOR_H_
 
-void harm_oscillator(){
-    std::cout << "I am an oscillator" << std::endl;
+void harm_oscillator();
 
-}
+#endif

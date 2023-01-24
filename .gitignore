@@ -1,2 +1,5 @@
 # ignore ALL files in the directory named build
 build/
+
+# ignore script test files
+*.csh

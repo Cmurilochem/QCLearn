@@ -60,15 +60,15 @@ include src/CMakeFiles/constants.dir/flags.make
 src/CMakeFiles/constants.dir/constants.cpp.o: src/CMakeFiles/constants.dir/flags.make
 src/CMakeFiles/constants.dir/constants.cpp.o: ../src/constants.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/murilo/QCLearn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/constants.dir/constants.cpp.o"
-	cd /home/murilo/QCLearn/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/constants.dir/constants.cpp.o -c /home/murilo/QCLearn/src/constants.cpp
+	cd /home/murilo/QCLearn/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/constants.dir/constants.cpp.o -c /home/murilo/QCLearn/src/constants.cpp
 
 src/CMakeFiles/constants.dir/constants.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/constants.dir/constants.cpp.i"
-	cd /home/murilo/QCLearn/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/murilo/QCLearn/src/constants.cpp > CMakeFiles/constants.dir/constants.cpp.i
+	cd /home/murilo/QCLearn/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/murilo/QCLearn/src/constants.cpp > CMakeFiles/constants.dir/constants.cpp.i
 
 src/CMakeFiles/constants.dir/constants.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/constants.dir/constants.cpp.s"
-	cd /home/murilo/QCLearn/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/murilo/QCLearn/src/constants.cpp -o CMakeFiles/constants.dir/constants.cpp.s
+	cd /home/murilo/QCLearn/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/murilo/QCLearn/src/constants.cpp -o CMakeFiles/constants.dir/constants.cpp.s
 
 # Object files for target constants
 constants_OBJECTS = \

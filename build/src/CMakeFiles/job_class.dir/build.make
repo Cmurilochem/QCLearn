@@ -60,15 +60,15 @@ include src/CMakeFiles/job_class.dir/flags.make
 src/CMakeFiles/job_class.dir/classes.cpp.o: src/CMakeFiles/job_class.dir/flags.make
 src/CMakeFiles/job_class.dir/classes.cpp.o: ../src/classes.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/murilo/QCLearn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/job_class.dir/classes.cpp.o"
-	cd /home/murilo/QCLearn/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/job_class.dir/classes.cpp.o -c /home/murilo/QCLearn/src/classes.cpp
+	cd /home/murilo/QCLearn/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/job_class.dir/classes.cpp.o -c /home/murilo/QCLearn/src/classes.cpp
 
 src/CMakeFiles/job_class.dir/classes.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/job_class.dir/classes.cpp.i"
-	cd /home/murilo/QCLearn/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/murilo/QCLearn/src/classes.cpp > CMakeFiles/job_class.dir/classes.cpp.i
+	cd /home/murilo/QCLearn/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/murilo/QCLearn/src/classes.cpp > CMakeFiles/job_class.dir/classes.cpp.i
 
 src/CMakeFiles/job_class.dir/classes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/job_class.dir/classes.cpp.s"
-	cd /home/murilo/QCLearn/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/murilo/QCLearn/src/classes.cpp -o CMakeFiles/job_class.dir/classes.cpp.s
+	cd /home/murilo/QCLearn/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/murilo/QCLearn/src/classes.cpp -o CMakeFiles/job_class.dir/classes.cpp.s
 
 # Object files for target job_class
 job_class_OBJECTS = \

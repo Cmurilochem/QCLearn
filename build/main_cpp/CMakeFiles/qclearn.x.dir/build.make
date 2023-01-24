@@ -60,15 +60,15 @@ include main_cpp/CMakeFiles/qclearn.x.dir/flags.make
 main_cpp/CMakeFiles/qclearn.x.dir/main.cpp.o: main_cpp/CMakeFiles/qclearn.x.dir/flags.make
 main_cpp/CMakeFiles/qclearn.x.dir/main.cpp.o: ../main_cpp/main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/murilo/QCLearn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object main_cpp/CMakeFiles/qclearn.x.dir/main.cpp.o"
-	cd /home/murilo/QCLearn/build/main_cpp && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qclearn.x.dir/main.cpp.o -c /home/murilo/QCLearn/main_cpp/main.cpp
+	cd /home/murilo/QCLearn/build/main_cpp && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qclearn.x.dir/main.cpp.o -c /home/murilo/QCLearn/main_cpp/main.cpp
 
 main_cpp/CMakeFiles/qclearn.x.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qclearn.x.dir/main.cpp.i"
-	cd /home/murilo/QCLearn/build/main_cpp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/murilo/QCLearn/main_cpp/main.cpp > CMakeFiles/qclearn.x.dir/main.cpp.i
+	cd /home/murilo/QCLearn/build/main_cpp && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/murilo/QCLearn/main_cpp/main.cpp > CMakeFiles/qclearn.x.dir/main.cpp.i
 
 main_cpp/CMakeFiles/qclearn.x.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qclearn.x.dir/main.cpp.s"
-	cd /home/murilo/QCLearn/build/main_cpp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/murilo/QCLearn/main_cpp/main.cpp -o CMakeFiles/qclearn.x.dir/main.cpp.s
+	cd /home/murilo/QCLearn/build/main_cpp && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/murilo/QCLearn/main_cpp/main.cpp -o CMakeFiles/qclearn.x.dir/main.cpp.s
 
 # Object files for target qclearn.x
 qclearn_x_OBJECTS = \

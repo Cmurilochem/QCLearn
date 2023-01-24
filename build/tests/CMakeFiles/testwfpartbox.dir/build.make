@@ -60,15 +60,15 @@ include tests/CMakeFiles/testwfpartbox.dir/flags.make
 tests/CMakeFiles/testwfpartbox.dir/testwfpartbox.cpp.o: tests/CMakeFiles/testwfpartbox.dir/flags.make
 tests/CMakeFiles/testwfpartbox.dir/testwfpartbox.cpp.o: ../tests/testwfpartbox.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/murilo/QCLearn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/testwfpartbox.dir/testwfpartbox.cpp.o"
-	cd /home/murilo/QCLearn/build/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testwfpartbox.dir/testwfpartbox.cpp.o -c /home/murilo/QCLearn/tests/testwfpartbox.cpp
+	cd /home/murilo/QCLearn/build/tests && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testwfpartbox.dir/testwfpartbox.cpp.o -c /home/murilo/QCLearn/tests/testwfpartbox.cpp
 
 tests/CMakeFiles/testwfpartbox.dir/testwfpartbox.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testwfpartbox.dir/testwfpartbox.cpp.i"
-	cd /home/murilo/QCLearn/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/murilo/QCLearn/tests/testwfpartbox.cpp > CMakeFiles/testwfpartbox.dir/testwfpartbox.cpp.i
+	cd /home/murilo/QCLearn/build/tests && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/murilo/QCLearn/tests/testwfpartbox.cpp > CMakeFiles/testwfpartbox.dir/testwfpartbox.cpp.i
 
 tests/CMakeFiles/testwfpartbox.dir/testwfpartbox.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testwfpartbox.dir/testwfpartbox.cpp.s"
-	cd /home/murilo/QCLearn/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/murilo/QCLearn/tests/testwfpartbox.cpp -o CMakeFiles/testwfpartbox.dir/testwfpartbox.cpp.s
+	cd /home/murilo/QCLearn/build/tests && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/murilo/QCLearn/tests/testwfpartbox.cpp -o CMakeFiles/testwfpartbox.dir/testwfpartbox.cpp.s
 
 # Object files for target testwfpartbox
 testwfpartbox_OBJECTS = \

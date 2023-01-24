@@ -60,15 +60,15 @@ include src/CMakeFiles/harm_oscillator.dir/flags.make
 src/CMakeFiles/harm_oscillator.dir/harm_oscillator.cpp.o: src/CMakeFiles/harm_oscillator.dir/flags.make
 src/CMakeFiles/harm_oscillator.dir/harm_oscillator.cpp.o: ../src/harm_oscillator.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/murilo/QCLearn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/harm_oscillator.dir/harm_oscillator.cpp.o"
-	cd /home/murilo/QCLearn/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/harm_oscillator.dir/harm_oscillator.cpp.o -c /home/murilo/QCLearn/src/harm_oscillator.cpp
+	cd /home/murilo/QCLearn/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/harm_oscillator.dir/harm_oscillator.cpp.o -c /home/murilo/QCLearn/src/harm_oscillator.cpp
 
 src/CMakeFiles/harm_oscillator.dir/harm_oscillator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/harm_oscillator.dir/harm_oscillator.cpp.i"
-	cd /home/murilo/QCLearn/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/murilo/QCLearn/src/harm_oscillator.cpp > CMakeFiles/harm_oscillator.dir/harm_oscillator.cpp.i
+	cd /home/murilo/QCLearn/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/murilo/QCLearn/src/harm_oscillator.cpp > CMakeFiles/harm_oscillator.dir/harm_oscillator.cpp.i
 
 src/CMakeFiles/harm_oscillator.dir/harm_oscillator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/harm_oscillator.dir/harm_oscillator.cpp.s"
-	cd /home/murilo/QCLearn/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/murilo/QCLearn/src/harm_oscillator.cpp -o CMakeFiles/harm_oscillator.dir/harm_oscillator.cpp.s
+	cd /home/murilo/QCLearn/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/murilo/QCLearn/src/harm_oscillator.cpp -o CMakeFiles/harm_oscillator.dir/harm_oscillator.cpp.s
 
 # Object files for target harm_oscillator
 harm_oscillator_OBJECTS = \

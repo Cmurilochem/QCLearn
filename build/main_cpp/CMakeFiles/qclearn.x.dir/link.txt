@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/qclearn.x.dir/main.cpp.o  -o ../../qclearn.x  ../src/libhead_foot.a ../src/libjob_class.a ../src/libpart_box.a ../src/libharm_oscillator.a ../src/librigid_rotor.a ../src/libconstants.a 
+/usr/bin/g++     CMakeFiles/qclearn.x.dir/main.cpp.o  -o ../../qclearn.x  ../src/libhead_foot.a ../src/libjob_class.a ../src/libpart_box.a ../src/libharm_oscillator.a ../src/librigid_rotor.a ../src/libconstants.a 

@@ -60,15 +60,15 @@ include src/CMakeFiles/part_box.dir/flags.make
 src/CMakeFiles/part_box.dir/particle_box.cpp.o: src/CMakeFiles/part_box.dir/flags.make
 src/CMakeFiles/part_box.dir/particle_box.cpp.o: ../src/particle_box.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/murilo/QCLearn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/part_box.dir/particle_box.cpp.o"
-	cd /home/murilo/QCLearn/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/part_box.dir/particle_box.cpp.o -c /home/murilo/QCLearn/src/particle_box.cpp
+	cd /home/murilo/QCLearn/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/part_box.dir/particle_box.cpp.o -c /home/murilo/QCLearn/src/particle_box.cpp
 
 src/CMakeFiles/part_box.dir/particle_box.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/part_box.dir/particle_box.cpp.i"
-	cd /home/murilo/QCLearn/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/murilo/QCLearn/src/particle_box.cpp > CMakeFiles/part_box.dir/particle_box.cpp.i
+	cd /home/murilo/QCLearn/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/murilo/QCLearn/src/particle_box.cpp > CMakeFiles/part_box.dir/particle_box.cpp.i
 
 src/CMakeFiles/part_box.dir/particle_box.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/part_box.dir/particle_box.cpp.s"
-	cd /home/murilo/QCLearn/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/murilo/QCLearn/src/particle_box.cpp -o CMakeFiles/part_box.dir/particle_box.cpp.s
+	cd /home/murilo/QCLearn/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/murilo/QCLearn/src/particle_box.cpp -o CMakeFiles/part_box.dir/particle_box.cpp.s
 
 # Object files for target part_box
 part_box_OBJECTS = \

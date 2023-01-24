@@ -60,15 +60,15 @@ include src/CMakeFiles/head_foot.dir/flags.make
 src/CMakeFiles/head_foot.dir/head_foot.cpp.o: src/CMakeFiles/head_foot.dir/flags.make
 src/CMakeFiles/head_foot.dir/head_foot.cpp.o: ../src/head_foot.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/murilo/QCLearn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/head_foot.dir/head_foot.cpp.o"
-	cd /home/murilo/QCLearn/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/head_foot.dir/head_foot.cpp.o -c /home/murilo/QCLearn/src/head_foot.cpp
+	cd /home/murilo/QCLearn/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/head_foot.dir/head_foot.cpp.o -c /home/murilo/QCLearn/src/head_foot.cpp
 
 src/CMakeFiles/head_foot.dir/head_foot.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/head_foot.dir/head_foot.cpp.i"
-	cd /home/murilo/QCLearn/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/murilo/QCLearn/src/head_foot.cpp > CMakeFiles/head_foot.dir/head_foot.cpp.i
+	cd /home/murilo/QCLearn/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/murilo/QCLearn/src/head_foot.cpp > CMakeFiles/head_foot.dir/head_foot.cpp.i
 
 src/CMakeFiles/head_foot.dir/head_foot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/head_foot.dir/head_foot.cpp.s"
-	cd /home/murilo/QCLearn/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/murilo/QCLearn/src/head_foot.cpp -o CMakeFiles/head_foot.dir/head_foot.cpp.s
+	cd /home/murilo/QCLearn/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/murilo/QCLearn/src/head_foot.cpp -o CMakeFiles/head_foot.dir/head_foot.cpp.s
 
 # Object files for target head_foot
 head_foot_OBJECTS = \

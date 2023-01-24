@@ -3,8 +3,21 @@ An educational software to learn fundamental quantum chemistry problems
 
 ## Compilation
 
-Within the main QCLean directory, open a terminal and proceed with the following commands:
+To configure:
 
-1) cmake -S . -B build
+```bash
+cmake -S . -B build
+```
 
-2) cmake --build build
+To build:
+
+```bash
+cmake --build build
+```
+
+To test (`--target` can be written as `-t` in CMake 3.15+):
+
+```bash
+cmake --build build --target test
+```
+

@@ -14,7 +14,7 @@ project(MyProject VERSION 1.0.0
 
 # Generate executable in my main directory
                   
-set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${MyProject_SOURCE_DIR})                  
+#set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${MyProject_SOURCE_DIR})                  
                   
 # Let's nicely support folders in IDEs
 

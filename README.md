@@ -27,6 +27,12 @@ cmake --build build
 ```
 This process will generate an executable `qclearn.x` in the main directory. 
 
+To run:
+```bash
+./qclearn.x
+```
+Provided that the input file `input.dat` is in the same directory as `qclearn.x`. 
+
 To test (`--target` can be written as `-t` in CMake 3.15+):
 
 ```bash

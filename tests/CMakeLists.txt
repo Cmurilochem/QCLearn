@@ -15,6 +15,8 @@ FetchContent_MakeAvailable(Catch2)
 
 # Adds Catch2::Catch2
 
+##################################################################################
+
 # Tests need to be added as executables first
 
 add_executable(testwfpartbox testwfpartbox.cpp)
@@ -23,9 +25,16 @@ add_executable(testwfpartbox testwfpartbox.cpp)
 
 target_link_libraries(testwfpartbox PRIVATE part_box constants Catch2::Catch2WithMain)
 
-# If you register a test, then ctest and make test will run it.
-# You can also run examples and check the output, as well.
+##################################################################################
+
+add_executable(testenergypartbox testenergypartbox.cpp)
+target_link_libraries(testenergypartbox PRIVATE part_box constants Catch2::Catch2WithMain)
+
+##################################################################################
+
+# If you register a test
 
 add_test(NAME wavefunction_1D_box COMMAND testwfpartbox) # Command can be a target
+add_test(NAME energy_1D_box COMMAND testenergypartbox) 
 
 ##################################################################################

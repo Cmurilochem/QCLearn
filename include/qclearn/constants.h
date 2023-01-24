@@ -7,6 +7,7 @@ namespace constants // using here a namespace
     extern const double pi;
     extern const double planck;
     extern const double planckBar; 
+    extern const double hartreeToJoule;
 }
 
 #endif

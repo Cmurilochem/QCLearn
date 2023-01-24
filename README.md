@@ -31,7 +31,7 @@ To run:
 ```bash
 ./qclearn.x
 ```
-Provided that the input file `input.dat` is in the same directory as `qclearn.x`. 
+provided that the input file `input.dat` is in the same directory as `qclearn.x`. 
 
 To test (`--target` can be written as `-t` in CMake 3.15+):
 

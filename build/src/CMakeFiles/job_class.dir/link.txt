@@ -1,2 +1,0 @@
-/usr/bin/ar qc libjob_class.a  CMakeFiles/job_class.dir/classes.cpp.o
-/usr/bin/ranlib libjob_class.a

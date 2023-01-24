@@ -1,2 +1,0 @@
-/usr/bin/ar qc librigid_rotor.a  CMakeFiles/rigid_rotor.dir/rigid_rotor.cpp.o
-/usr/bin/ranlib librigid_rotor.a

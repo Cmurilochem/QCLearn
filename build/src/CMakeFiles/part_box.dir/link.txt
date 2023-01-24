@@ -1,2 +1,0 @@
-/usr/bin/ar qc libpart_box.a  CMakeFiles/part_box.dir/particle_box.cpp.o
-/usr/bin/ranlib libpart_box.a

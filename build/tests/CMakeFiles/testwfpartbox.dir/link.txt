@@ -1,1 +1,0 @@
-/usr/bin/g++  -g   CMakeFiles/testwfpartbox.dir/testwfpartbox.cpp.o  -o ../../testwfpartbox  ../src/libpart_box.a ../src/libconstants.a 

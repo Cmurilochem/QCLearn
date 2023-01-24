@@ -18,9 +18,9 @@ double particleBoxExactWF(int quant_num, double lenght, double x_coord){
 //
 /* output given in atomic units (E_h) */
 //
-    double norm_factor = sqrt(2.0E+00/lenght); // normalization factor
-    double sinpart = sin( (quant_num * (constants::pi) * x_coord)/lenght ); // sine function part 
-    double psi = norm_factor * sinpart; // total normalize wave function
+    double norm_factor = sqrt(2.0/lenght); // normalization factor
+    double sinpart = sin( (double(quant_num) * (constants::pi) * x_coord)/lenght ); // sine function part 
+    double psi = norm_factor * sinpart; // total normalized wave function
 
     std::cout << "Energy is: " << psi << std::endl; 
 
@@ -54,6 +54,6 @@ void particle_box(){
     std::cout << "3). In region II, the time-independent Schrödinger equation is" << std::endl;
     std::cout << "" << std::endl;  
 
-    particleBoxExactWF(1,2,1.0); 
+    particleBoxExactWF(1,2.0,2.0); 
 
 }

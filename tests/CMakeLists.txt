@@ -8,10 +8,10 @@ include(FetchContent)
 # Testing library
 
 FetchContent_Declare(
-  catch
+  Catch2
   GIT_REPOSITORY https://github.com/catchorg/Catch2.git
-  GIT_TAG v2.13.6)
-FetchContent_MakeAvailable(catch)
+  GIT_TAG v3.0.1)
+FetchContent_MakeAvailable(Catch2)
 
 # Adds Catch2::Catch2
 

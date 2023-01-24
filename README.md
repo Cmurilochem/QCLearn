@@ -1,7 +1,9 @@
 # QCLearn
 An educational software to learn fundamental quantum chemistry problems
 
-## Compilation
+## Compilation & testing
+
+## Compilation & testing
 
 To configure:
 

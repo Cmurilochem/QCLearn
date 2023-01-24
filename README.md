@@ -1,5 +1,9 @@
 # QCLearn
-An educational software to learn fundamental quantum chemistry problems
+An educational software to learn fundamental quantum chemistry problems. It generates iteratively wave function plots and expected energies for well-known problems like:
+
+- Particle in a 1D box.
+- Harmonic oscillator. 
+- Rigid rotor.
 
 ## Program dependencies
 

@@ -3,7 +3,7 @@ An educational software to learn fundamental quantum chemistry problems
 
 ## Program dependencies
 
-The user must ensure that the following utilities are:
+The user must ensure that the following utilities are available:
 
 - CMake 3.10 or better; 3.14+ highly recommended.
 - A C++ compatible compiler, e.g., g++ from gcc 9.1 or an upgrade.

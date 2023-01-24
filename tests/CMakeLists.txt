@@ -21,7 +21,7 @@ add_executable(testwfpartbox testwfpartbox.cpp)
 
 # Should be linked to the main library
 
-target_link_libraries(testwfpartbox PRIVATE part_box constants Catch2::Catch2)
+target_link_libraries(testwfpartbox PRIVATE part_box constants Catch2::Catch2WithMain)
 
 # If you register a test, then ctest and make test will run it.
 # You can also run examples and check the output, as well.

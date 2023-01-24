@@ -21,7 +21,7 @@ To build:
 ```bash
 cmake --build build
 ```
-This process will generate an executable 'qclearn.x' inside the main directory. 
+This process will generate an executable `qclearn.x` inside the main directory. 
 
 To test (`--target` can be written as `-t` in CMake 3.15+):
 

@@ -38,9 +38,9 @@ void Job::getData(std::string filename){
             }
         }
         catch (std::string mytype) { 
-            std::cout << "Error!" << std::endl;
-            std::cout << "Please, provide a valid job type" << std::endl;
-            std::cout << "Input job type ---> " << mytype << " <--- is not yet implemented" << std::endl;
+            std::cerr << "Error!" << std::endl;
+            std::cerr << "Please, provide a valid job type" << std::endl;
+            std::cerr << "Input job type ---> " << mytype << " <--- is not yet implemented" << std::endl;
             exit(0);
         }
 
@@ -77,7 +77,7 @@ void Job::putData(){
         harm_oscillator();
 
     } else {
-        std::cout << "Error!" << std::endl;
+        std::cerr << "Error!" << std::endl;
         exit(0);
     }
     

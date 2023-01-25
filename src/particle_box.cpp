@@ -17,6 +17,31 @@ double particleBoxExactEnergy(int quant_num, double lenght, double mass){
 // mass: mass of the particle in gram
 /* output given in atomic units (E_h) */
 //
+
+// Throw an exception for certain conditions
+
+   try { 
+            if ( lenght <= 0.0 ) {
+                throw 10; 
+            } else if ( mass <= 0.0 ){
+                throw 10;
+            } else if ( quant_num < 1 ){
+                throw "10";
+            }
+        }
+    catch (int e1) { 
+        std::cerr << "Error inside particleBoxExactEnergy function !" << std::endl;
+        std::cerr << "Lenght and/or mass cannot be lower or equal to zero" << std::endl;
+        exit(0);
+    }
+    catch (...) { 
+        std::cerr << "Error inside particleBoxExactEnergy function !" << std::endl;
+        std::cerr << "Quantum number cannot be lower than 1" << std::endl;
+        exit(0);
+    }
+
+// continuing 
+
     double massKg = mass*(1.0e-3); // converting mass from g to Kg
     double lenghtMeter = lenght*(1.0e-9); // converting nm to m   
 
@@ -43,6 +68,29 @@ double particleBoxExactWF(int quant_num, double lenght, double x_coord){
 //
 /* output given in nm**-1 */
 //
+
+// Throw an exception for certain conditions
+
+   try { 
+            if ( lenght <= 0.0 ) {
+                throw 10; 
+            } else if ( quant_num < 1 ){
+                throw "10";
+            }
+        }
+    catch (int e1) { 
+        std::cerr << "Error inside particleBoxExactWF function !" << std::endl;
+        std::cerr << "Lenght cannot be lower or equal to zero" << std::endl;
+        exit(0);
+    }
+    catch (...) { 
+        std::cerr << "Error inside particleBoxExactWF function !" << std::endl;
+        std::cerr << "Quantum number cannot be lower than 1" << std::endl;
+        exit(0);
+    }
+
+// continuing 
+
     double norm_factor = sqrt( 2.0 / lenght ); // normalization factor
     double sinpart = sin( (double(quant_num) * (constants::pi) * x_coord ) / lenght ); // sine function part 
     double psi = norm_factor * sinpart; // total normalized wave function
@@ -81,6 +129,6 @@ void particle_box(){
 
     particleBoxExactWF(1,2.0,2.0); 
 
-    particleBoxExactEnergy(1,4.0,2.0E-26);
+    particleBoxExactEnergy(3,4.0,2.0E-26);
 
 }

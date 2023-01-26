@@ -14,26 +14,26 @@ The user must ensure that the following utilities are available:
 
 ## Compilation & testing
 
-To configure:
+-To configure:
 
 ```bash
 cmake -S . -B build
 ```
 
-To build:
+-To build:
 
 ```bash
 cmake --build build
 ```
-This process will generate an executable `qclearn.x` in the main directory. 
+this process will generate an executable `qclearn.x` in the main directory. 
 
-To run:
+-To run:
 ```bash
 ./qclearn.x
 ```
 provided that the input file `input.dat` is in the same directory as `qclearn.x`. 
 
-To test (`--target` can be written as `-t` in CMake 3.15+):
+-To test (`--target` can be written as `-t` in CMake 3.15+):
 
 ```bash
 cmake --build build --target test

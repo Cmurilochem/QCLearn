@@ -6,6 +6,7 @@
 class Job{
   private:
     std::string type;
+    double param1, param2;
 
   public: 
     Job();                                 // constructor

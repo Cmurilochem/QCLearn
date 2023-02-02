@@ -4,10 +4,40 @@
 #include <iostream>
 #include <fstream>   // open, read and write to an external file
 #include <stdlib.h>  // necessary to abort 
+#include <string>  
+#include <vector>    // dealing with vectors 
+#include <sstream>   // streams
 #include "classes.h"
 #include "particle_box.h"
 #include "rigid_rotor.h"
 #include "harm_oscillator.h"
+
+//
+/* Function to split strings */
+//
+void split_str( std::string const &str, const char delim,  
+        std::vector <std::string> &out )  
+        {  
+            // create a stream from the string  
+            std::stringstream s(str);  
+          
+            std::string s2; 
+
+            out.clear(); // just in case, clean the vector
+
+            while (std:: getline (s, s2, delim) )  
+            {  
+                out.push_back(s2); // store the string in s2 
+                
+            }  
+
+            //for (int i=0; i<out.size(); ++i)
+            //    std::cout << out[i] << std::endl;
+        }
+
+//
+/* Definition of the class methods*/
+//
 
 Job::Job(){ // Constructor
     std::cout << "" << std::endl;
@@ -16,14 +46,47 @@ Job::Job(){ // Constructor
 }
 
 void Job::getData(std::string filename){
-    std::string temp;
+    std::vector <std::string> out;
+    std::string temp,line;
+    int i;
 
     std::ifstream myfile(filename);
 
     if (myfile.is_open()){
-        
-        getline(myfile,temp);                    // reading the job type (whole first line)
-        type = temp.substr(temp.find(" ")+1,-1); // removing the "*JOB" part
+
+        i=0;
+
+        while (getline(myfile,line)){
+
+            if (i==0) {
+
+                type = line.substr(line.find(" ")+1,-1); // removing the "*JOB" part
+                //std::cout << type << std::endl;
+
+            } else {
+                
+                split_str(line, ' ', out);               // spliting the line into vector of strings
+                //std::cout << std::stod(out[1]) << std::endl;
+
+                switch (i) {
+                    case 1:
+
+                        param1 = std::stod(out[1]);
+                        //std::cout << param1 << std::endl;
+                        break;
+
+                    case 2:
+
+                        param2 = std::stod(out[1]);
+                        //std::cout << param2 << std::endl;
+                        break;
+
+                }
+                    
+            }
+
+            i++;
+        }
 
         //
         /* handling exceptions - checking for errors */
@@ -43,9 +106,6 @@ void Job::getData(std::string filename){
             std::cerr << "Input job type ---> " << mytype << " <--- is not yet implemented" << std::endl;
             exit(0);
         }
-
-        getline(myfile,temp);                    // reading second entire line
-        std::cout << temp.substr(temp.find(" ")+1,-1) << std::endl; 
 
         myfile.close();
 

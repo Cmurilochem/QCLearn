@@ -15,9 +15,7 @@
 //
 /* Function to split strings */
 //
-void split_str( std::string const &str, const char delim,  
-        std::vector <std::string> &out )  
-        {  
+void split_str( std::string const &str, const char delim, std::vector <std::string> &out ){  
             // create a stream from the string  
             std::stringstream s(str);  
           
@@ -58,7 +56,7 @@ void Job::getData(std::string filename){
 
         while (getline(myfile,line)){ // reading lines in a ro  
 
-            split_str(line, ' ', out);               // spliting the line into vector of string 
+            split_str(line, ' ', out); // spliting the line into vector of string 
 
             switch (i) {
                 case 0: // if it is the first line, define the type of job            

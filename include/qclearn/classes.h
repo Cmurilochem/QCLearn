@@ -7,6 +7,7 @@ class Job{
   private:
     std::string type;
     double param1, param2;
+    int nQuantMax;
 
   public: 
     Job();                                 // constructor

@@ -56,33 +56,26 @@ void Job::getData(std::string filename){
 
         i=0;
 
-        while (getline(myfile,line)){
+        while (getline(myfile,line)){ // reading lines in a ro  
 
-            if (i==0) {
+            split_str(line, ' ', out);               // spliting the line into vector of string 
 
-                type = line.substr(line.find(" ")+1,-1); // removing the "*JOB" part
-                //std::cout << type << std::endl;
-
-            } else {
-                
-                split_str(line, ' ', out);               // spliting the line into vector of strings
-                //std::cout << std::stod(out[1]) << std::endl;
-
-                switch (i) {
-                    case 1:
-
-                        param1 = std::stod(out[1]);
-                        //std::cout << param1 << std::endl;
-                        break;
-
-                    case 2:
-
-                        param2 = std::stod(out[1]);
-                        //std::cout << param2 << std::endl;
-                        break;
-
-                }
-                    
+            switch (i) {
+                case 0: // if it is the first line, define the type of job            
+                    type = out[1];
+                    //std::cout << type << std::endl;
+                    break;              
+                case 1:             
+                    param1 = std::stod(out[1]);
+                    //std::cout << param1 << std::endl;
+                    break;              
+                case 2:             
+                    param2 = std::stod(out[1]);
+                    //std::cout << param2 << std::endl;
+                    break;              
+                default: // if it is the last line, define the maximum quantum number           
+                    nQuantMax = std::stoi(out[1]); 
+                    //std::cout << n_quant_max << std::endl;                  
             }
 
             i++;

@@ -39,7 +39,7 @@ void split_str( std::string const &str, const char delim, std::vector <std::stri
 
 Job::Job(){ // Constructor
     std::cout << "" << std::endl;
-    std::cout << "Setting job type" << std::endl;
+    std::cout << "Setting job type..." << std::endl;
     std::cout << "" << std::endl;
 }
 
@@ -110,10 +110,14 @@ void Job::putData(){
     
     if (type == "PARTICLE_BOX") {
 
-        std::cout << "Particle confined in a one-dimensional box" << std::endl;
+        std::cout << "Particle in a 1D box selected" << std::endl;
+        std::cout << " " << std::endl;
+        std::cout << "Lenght of the box (in nanometer): " << param1 << std::endl;
+        std::cout << "Mass of the particle (in gram): " << param2 << std::endl;
+        std::cout << "Maximum quantum number: " << nQuantMax << std::endl;
         std::cout << " " << std::endl;
 
-        particle_box();
+        particle_box(param1, param2, nQuantMax);
 
     } else if (type == "RIGID_ROTOR") {
 

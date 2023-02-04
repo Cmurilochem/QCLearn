@@ -34,4 +34,13 @@ add_subdirectory(main_cpp)
 
 # Adding also the tests in the path 
 
-add_subdirectory(tests)        
+add_subdirectory(tests)    
+
+# Adding the documentation
+
+find_package(Doxygen) # package for documentation
+  if(Doxygen_FOUND)
+    add_subdirectory(docs)
+  else()
+    message(STATUS "Doxygen not found, not building docs")
+  endif()

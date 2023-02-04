@@ -11,6 +11,7 @@ The user must ensure that the following utilities are available:
 
 - CMake 3.10 or better; 3.14+ highly recommended.
 - A C++ compatible compiler, e.g., g++ from gcc 9.1 or an upgrade.
+- Doxygen 1.8.17 or an upgrade.
 
 ## Compilation & testing
 
@@ -38,4 +39,11 @@ provided that the input file `input.dat` is in the same directory as `qclearn.x`
 ```bash
 cmake --build build --target test
 ```
+
+- To generate documentation
+
+```bash
+cmake --build build --target docs
+```
+
 

@@ -102,7 +102,7 @@ double particleBoxExactWF(int quant_num, double lenght, double x_coord){
 
 void particle_box(double lenght, double mass, int nqtmax){
 
-    const double fact = 1.0E+00;
+    const double fact = 1.0E+03;
     int i, j, k;
     double energyEh, ZPE, energyEhRelZPE;
 

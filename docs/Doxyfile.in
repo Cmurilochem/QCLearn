@@ -1,2 +1,3 @@
+PROJECT_NAME           = QClearn
 OUTPUT_DIRECTORY       = @MyProject_SOURCE_DIR@/docs/
 INPUT                  = @MyProject_SOURCE_DIR@/src/ @MyProject_SOURCE_DIR@/include/qclearn/ @MyProject_SOURCE_DIR@/docs

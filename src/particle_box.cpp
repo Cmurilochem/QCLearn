@@ -102,9 +102,9 @@ double particleBoxExactWF(int quant_num, double lenght, double x_coord){
 
 void particle_box(double lenght, double mass, int nqtmax){
 
-    const double fact = 1.0E+03;
+    const double fact = 1.0E+00;
     int i, j, k;
-    double energyEh;
+    double energyEh, ZPE, energyEhRelZPE;
 
     //std::cout << "             ∞                                  ∞             " << std::endl;
     //std::cout << "             .                                  .             " << std::endl;
@@ -132,13 +132,32 @@ void particle_box(double lenght, double mass, int nqtmax){
     //std::cout << "3). In region II, the time-independent Schrödinger equation is" << std::endl;
     //std::cout << "" << std::endl;  
 
-    std::cout << "Calculating wavefunctions and energies..." << std::endl;
-
+    std::cout << "Setting up wavefunctions and energies...\n\n";
+//
+/* Calculating now wavefunctions and energies for all states up to nqtmax */
+//
     for (i=1; i<=nqtmax; i++){
-
+//
+/* Quantized energies relative to the botton of the box */
+//
         energyEh = particleBoxExactEnergy(i, lenght, mass);
-
-        std::cout << "|Ψ_" << i << ">" << " " << energyEh*fact << std::endl;
+//
+/* Setting up ZPE */
+//
+        if ( i==1 ){
+            ZPE = energyEh;
+            //std::cout << ZPE << std::endl;
+        }
+//
+/* Quantized energies relative to ZPE */
+//
+        energyEhRelZPE = (energyEh - ZPE); 
+//
+/* Printing out info */
+//
+        std::cout << "E_" << i << " " << "=" << " " << energyEh << " " << "E_h" << "    ";
+        //std::cout << "E_" << i << " " << "=" << " " << energyEhRelZPE << " " << "E_h" << "    ";
+        std::cout << "Calculating " << "|Ψ_" << i << ">\n\n";
     }
 
     particleBoxExactWF(1,2.0,2.0); 

@@ -1,0 +1,2 @@
+OUTPUT_DIRECTORY       = /home/murilo/QCLearn/docs/
+INPUT                  = /home/murilo/QCLearn/src/ /home/murilo/QCLearn/include/qclearn/ /home/murilo/QCLearn/docs

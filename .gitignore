@@ -3,3 +3,7 @@ build/
 
 # ignore script test files
 *.csh
+
+#ignoring also some documentation directories
+docs/html/
+latex/

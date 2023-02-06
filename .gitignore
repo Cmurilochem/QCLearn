@@ -6,4 +6,4 @@ build/
 
 #ignoring also some documentation directories
 docs/html/
-latex/
+docs/latex/

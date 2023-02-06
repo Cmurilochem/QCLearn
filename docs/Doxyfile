@@ -1,5 +1,5 @@
 PROJECT_NAME           = QClearn
 EXCLUDE_PATTERNS       = *.txt
 OUTPUT_DIRECTORY       = /home/murilo/QCLearn/docs/
-INPUT                  = /home/murilo/QCLearn/src/ /home/murilo/QCLearn/include/qclearn/ /home/murilo/QCLearn/docs
+INPUT                  = /home/murilo/QCLearn/main_cpp/ /home/murilo/QCLearn/src/ /home/murilo/QCLearn/include/qclearn/ /home/murilo/QCLearn/docs
 DOT_PATH               = /usr/bin

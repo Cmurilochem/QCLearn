@@ -12,7 +12,7 @@ class Job{
   public: 
     Job();                                 // constructor
     void getData(std::string filename);    // reading private attributes from file
-    void putData();                        // printing relevant data
+    void putData(std::string filename);    // printing relevant data to screen and file
 };
 
 #endif

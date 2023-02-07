@@ -106,7 +106,7 @@ void Job::getData(std::string filename){
     
 }
 
-void Job::putData(){
+void Job::putData(std::string filename){
     
     if (type == "PARTICLE_BOX") {
 
@@ -117,7 +117,7 @@ void Job::putData(){
         std::cout << "Maximum quantum number: " << nQuantMax << std::endl;
         std::cout << " " << std::endl;
 
-        particle_box(param1, param2, nQuantMax);
+        particle_box(param1, param2, nQuantMax, filename);
 
     } else if (type == "RIGID_ROTOR") {
 

@@ -100,9 +100,34 @@ double particleBoxExactWF(int quant_num, double lenght, double x_coord){
     return psi;
 }
 
-void particle_box(double lenght, double mass, int nqtmax){
+void data_particle_box(int quant_num, double energy, double lenght, std::string filename, int grid = 100){
 
-    const double fact = 1.0E+03;
+    int i;
+    double step, x, x0;
+
+    x0 = 0.0;
+    step = ( lenght - x0 ) / ( grid - 1.0 );
+
+    for (i=0; i<grid; i++){
+        x = x0 + (step * float(i));
+        std::cout << i << " " << x << std::endl;
+    }
+
+}
+
+void particle_box(double lenght, double mass, int nqtmax, std::string filename){
+//
+/* Returns the exact wavefunction as grid points and energy of a particle in a 1D box */
+// 
+/* inputs */
+//
+// lenght: lenght of the box (l) in nm
+// mass: mass of the particle in gram
+// nqtmax: maximum quantum number to generate data
+//
+/* outputs a file with wave functions evaluated at grid points and energies */
+//
+    //const double fact = 1.0E+03;
     int i, j, k;
     double energyEh, ZPE, energyEhRelZPE;
 
@@ -144,7 +169,7 @@ void particle_box(double lenght, double mass, int nqtmax){
 //
 /* Setting up ZPE */
 //
-        if ( i==1 ){
+        if ( i == 1 ){
             ZPE = energyEh;
             //std::cout << ZPE << std::endl;
         }
@@ -158,6 +183,11 @@ void particle_box(double lenght, double mass, int nqtmax){
         std::cout << "E_" << i << " " << "=" << " " << energyEh << " " << "E_h" << "    ";
         //std::cout << "E_" << i << " " << "=" << " " << energyEhRelZPE << " " << "E_h" << "    ";
         std::cout << "Calculating " << "|Ψ_" << i << ">\n\n";
+//
+/* Generating the wavefunctions as grid points and writting them to a file */
+//
+        data_particle_box(i, energyEh, lenght, filename);
+
     }
 
     particleBoxExactWF(1,2.0,2.0); 

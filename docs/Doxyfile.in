@@ -1,4 +1,4 @@
-PROJECT_NAME           = QClearn
+PROJECT_NAME           = QCLearn
 EXCLUDE_PATTERNS       = *.txt
 OUTPUT_DIRECTORY       = @MyProject_SOURCE_DIR@/docs/
 INPUT                  = @MyProject_SOURCE_DIR@/main_cpp/ @MyProject_SOURCE_DIR@/src/ @MyProject_SOURCE_DIR@/include/qclearn/ @MyProject_SOURCE_DIR@/docs

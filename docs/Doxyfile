@@ -1,4 +1,4 @@
-PROJECT_NAME           = QClearn
+PROJECT_NAME           = QCLearn
 EXCLUDE_PATTERNS       = *.txt
 OUTPUT_DIRECTORY       = /home/murilo/QCLearn/docs/
 INPUT                  = /home/murilo/QCLearn/main_cpp/ /home/murilo/QCLearn/src/ /home/murilo/QCLearn/include/qclearn/ /home/murilo/QCLearn/docs

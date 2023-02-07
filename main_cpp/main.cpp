@@ -27,7 +27,7 @@ int main(){
 //
 /* printing data */
 //
-  qc_problem.putData();
+  qc_problem.putData("output.wf");
 //
 /* Calculating execution time*/
 //
